@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>WEBWANG</title>
+		<meta accesskey="" />
+		<meta charset="utf-8" />
+		<meta http-equiv="content-type" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" content="前端技术知识网" />
+		<meta name="Keywords" content="js html css ES6 vue react less bootstrap angular node webpack" />
+		<!--logo两种方式-->
+		<link rel="shortcut icon" href="./com/ico/favicon_16X16.ico">
+		<!--<link rel="icon" type="image/gif" href="./com/img/logo-4.png" >-->
+		<!--jquery-2-->
+		<script src="./com/jquery-2.1.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--ckeditor-->
+		<script src="./com/ckeditor/ckeditor.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="./com/highlight/styles/atom-one-dark.css" />
+		<!--highlight-->
+		<script src="./com/highlight/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="home">
+			<!--页面头部 导航-->
+			<div class="logo">
+				<img src="./com/ico/favicon_128X128.ico" />
+			</div>
+			<header class="header">
+				<div class="contain">
+					<nav class="Sub_items">
+						<div class="nav_item">
+							<a class="nav_item Front_end_sub">Front-end</a>
+							<nav class="a nav_item Front_end_items hide">
+								<a class="a nav_item html">html-html5</a>
+								<a class="a nav_item css">css-css3</a>
+								<a class="a nav_item js">js-ES6</a>
+								<a class="a nav_item less">less</a>
+								<a class="a nav_item bootstrap">bootstrap</a>
+								<a class="a nav_item jquery">jquery</a>
+								<a class="a nav_item XCX">WX-xcx</a>
+								<a class="a nav_item vue">vue</a>
+								<a class="a nav_item react">react</a>
+								<a class="a nav_item angular">angular</a>
+								<a class="a nav_item angular" href="./ng-index.html">angular2</a>
+								<a class="a nav_item node">node</a>
+								<a class="a nav_item webpack">webpack</a>
+							</nav>
+						</div>
+						<div class="nav_item">
+							<a class="nav_item Reading_sub">Reading</a>
+							<nav class="b nav_item Reading_items hide">
+								<a class="b nav_item st">《三体》</a>
+								<a class="b nav_item zx">《诛仙》</a>
+								<a class="b nav_item sz">《守住中国人的底线》</a>
+								<a class="b nav_item other">Other</a>
+							</nav>
+						</div>
+						<div class="nav_item">
+							<a class="nav_item Contact_sub">Contact</a>
+						</div>
+						<div class="nav_item">
+							<a class="nav_item Other_sub">Other</a>
+						</div>
+
+					</nav>
+				</div>
+
+			</header>
+			<!--页面内容 要素-->
+			<div class="contain main">
+				<div class="container" id="1">
+					<h4 class="h4">css on-off-switch </h4>
+					<p class="intro">纯css+html实现on-off-switch按钮组；效果如下（可点击）：</p>
+					<div class="row">
+						<div class="demo">
+							<!--<textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>-->
+							<div class="onoffswitch">
+								<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+								<label class="onoffswitch-label" for="myonoffswitch">
+							        <div class="onoffswitch-inner">
+							            <div class="onoffswitch-active">ON</div>
+							            <div class="onoffswitch-inactive">OFF</div>
+							        </div>
+							        <div class="onoffswitch-switch"></div>
+							    </label>
+							</div>
+							<pre>
+				            	<code class="hljs html xml"></code>			
+				            	<code class="hljs css"></code>
+				            </pre>
+						</div>
+					</div>
+				</div>
+				<div class="container" id="2">
+					<h4 class="h4">css css3-filter </h4>
+					<p class="intro">纯css+html实现图片蒙版效果,不支持IE；效果如下：</p>
+					<div class="row">
+						<div class="demo">
+							默认值是none，且不具备继承性
+							<img class="img none" src="com/img/css_filter.png" /> 灰度
+							<img class="img grayscale" src="com/img/css_filter.png" /> 褐色
+							<img class="img sepia" src="com/img/css_filter.png" /> 饱和度
+							<img class="img saturate" src="com/img/css_filter.png" /> 色相旋转
+							<img class="img hue-rotate" src="com/img/css_filter.png" /> 反色
+							<img class="img invert" src="com/img/css_filter.png" /> 透明度
+							<img class="img opacity" src="com/img/css_filter.png" /> 亮度
+							<img class="img brightness" src="com/img/css_filter.png" /> 对比度
+							<img class="img contrast" src="com/img/css_filter.png" /> 模糊
+							<img class="img blur" src="com/img/css_filter.png" /> 阴影
+							<img class="img drop-shadow" src="com/img/css_filter.png" /> 倒影
+							<img id="reflect" class="img box-reflect" src="com/img/css_filter.png" /> Firefox倒影
+							<div id="someid">
+								<img src="com/img/css_filter.png">
+							</div>
+							<style type="text/css">
+								body {
+									background: #FFF;
+								}
+								
+								#someid {
+									margin-bottom: 120px;
+									/*padding: 0 10px;*/
+									position: relative;
+									-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.3) 0%, transparent 50%, transparent 100%);
+								}
+								
+								#someid img {
+									/*border: 10px solid #444;*/
+									border-radius: 17px;
+									/*box-shadow: 15px 0 20px -20px #444444, -15px 0 20px -20px #444444;*/
+									z-index: -1;
+								}
+								
+								#someid:before {
+									background: -moz-linear-gradient(center top, #FFFFFF, #FFFFFF 30%, rgba(255, 255, 255, 0.9) 65%, rgba(255, 255, 255, 0.7)) repeat scroll 0 0 padding-box, -moz-element(#someid) no-repeat scroll 0 0px content-box rgba(0, 0, 0, 0);
+									content: "";
+									height: 107px;
+									left: 0;
+									padding: 1px 0;
+									position: absolute;
+									top: 107px;
+									-webkit-transform: scaleY(-1);
+									transform: scaleY(-1);
+									width: 260px;
+								}
+							</style>
+							<pre>
+				            	<code  class="hljs html xml"></code>			
+				            	<code class="hljs css"></code>
+				            </pre>
+						</div>
+					</div>
+				</div>
+
+				<div class="container" id="3">
+					<h4 class="h4">css css3-seamless-carousel</h4>
+					<p class="intro">纯css3无缝滚动，鼠标悬浮时暂停滚动，不支持IE；效果如下：</p>
+					<div class="row">
+						<div class="demo">
+							<div id="wrap">
+								<ul id="list">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</div>
+							<pre>
+								<code class="hljs html xml"></code>			
+				            	<code class="hljs css"></code>
+			            	</pre>
+						</div>
+					</div>
+				</div>
+				<div class="container" id="4">
+					<h4 class="h4">html iframe Access-Control-Allow-Origin</h4>
+					<p class="intro">iframe框架功能强大,可以解决一部分跨域问题；video和embed有类似功能</p>
+					<div class="row">
+						<div class="demo">
+							1<iframe sandbox="allow-scripts" width="" srcdoc="#1" src="#1" seamless="seamless" scrolling="yes" name="demo" marginwidth="10px" marginheight="10px" longdesc="index.html" height="100px" frameborder="yes"  srcdoc="<p>did you get a cover picture yet?"></iframe>
+							2<iframe sandbox="allow-scripts" srcdoc="<p>Yeah, you can see it <a href=&quot;/gallery?mode=cover&amp;amp;page=1&quot;>in my gallery</a>."></iframe>
+							3<iframe sandbox="allow-scripts" srcdoc="<p>hey that’s earl’s table.<p>you should get earl&amp;amp;me on the next cover."></iframe>
+							4<iframe sandbox="allow-scripts allow-same-origin" title="Example iframe" src="http://www.w3school.com.cn/" width="100%" height="500px"></iframe>
+							5<iframe sandbox="allow-scripts" title="Maps" src="https://www.w3.org/TR/" width="100%" height="500px"></iframe>
+							6<iframe sandbox="allow-scripts" title="Video" src="http://www.ecma-international.org/ecma-262/7.0/" width="100%" height="500px" allowfullscreen></iframe>
+							7<iframe sandbox="allow-scripts allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-presentation" title="Advert" src="http://codepen.io/" width="100%" height="500px"></iframe>
+							8<video src="https://o6yh618n9.qnssl.com/%287%29%20Twitter.MP4" controls="controls" width="" height="">
+								your browser does not support the video tag
+							</video>
+							9<embed src="http://player.youku.com/player.php/sid/XMTY5NDU5MDQ1Ng==/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+							10<div>
+								<embed src="//cloud.video.taobao.com/play/u/1769916215/p/2/e/1/t/3/30910183.swf#tb_videoid=5994395" height="410" width="610" allowScriptAccess="never" flashvars="scene=taobao_shop" type="application/x-shockwave-flash"> </embed>
+							</div>
+							11<div class="https-box">
+								<iframe sandbox="allow-scripts" width="" height="" frameborder="0" scrolling="auto" noresize="noresize" src="https://o6yh618n9.qnssl.com/%287%29%20Twitter.MP4"></iframe>
+							</div>
+							<!--12<iframe width="500" height="380" src="https://cybermap.kaspersky.com/en/widget/dynamic/dark" frameborder="0">-->
+							<pre>
+				            	<code class="hljs html xml"></code>			
+				            	<code class="hljs css"></code>
+				            </pre>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--页面底部 备案 链接-->
+			<footer class="footer">
+				<div class="link-more tcenter">
+					<p>友情链接</p>
+					<a href="http://www.w3school.com.cn/">
+						<img src="http://www.w3school.com.cn/i/w3school_logo_white.gif" alt="W3School 在线教程" />
+					</a>
+				</div>
+				<p class="icp-num tcenter">&copy;2017 前端技术知识网
+					<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备17077098号-1</a>
+				</p>
+			</footer>
+			<!--页面侧边 广告 回顶-->
+			<div class="side">
+				<div class="side_left fixed">
+
+				</div>
+				<div class="side_right fixed">
+
+				</div>
+				<div class="to_top fixed">
+
+				</div>
+				<div class="to_bottom fixed">
+
+				</div>
+			</div>
+			<!--canvas-nest-->
+			<script src="./com/canvas-nest.min.js" count="200" zindex="-2" opacity="0.5" color="47,135,193" type="text/javascript"></script>
+	<script type="text/javascript" src="dist/homepage.bundle.js"></script></body>
+
+</html>
